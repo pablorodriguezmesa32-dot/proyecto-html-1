@@ -1,0 +1,55 @@
+body {
+    font-family: "Arial";
+    background-color: lightblue;
+}
+
+h1{
+    color: darkblue;
+}
+
+nav {
+    background-color: navy;
+    color: white;
+    padding: 15px;
+}
+
+p {
+    font-size: 20px;
+    color: red;
+}
+
+@media (max-width:800px) {
+    /*Pantallas menores de 800px*/
+    p {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 800px){
+    /*Diseño para tablet*/
+    p {
+       font-size: 30px;
+    }
+}
+
+@media (max-width:599px){
+    /*Diseño para movil*/
+    p {
+    font-size: 40px;
+    }
+}
+
+@media print {
+    body {
+        background-color: white;
+        color: black;
+    }
+
+    h1{
+        color: black;
+    }
+
+    nav {
+        display: none;
+    }
+}

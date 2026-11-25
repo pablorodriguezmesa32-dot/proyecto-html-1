@@ -1,0 +1,13 @@
+section {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+article {
+    background-color: aqua;
+    font-size: 1.8rem;
+    width: 200px;
+    padding: 3px;
+    margin: 5px;
+}

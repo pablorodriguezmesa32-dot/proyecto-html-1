@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Repaso HTML" />
+    <meta name="keywords" content="HTML,etiqueta,atributo,listas,tablas" />
+    <meta name="author" content="Pabloski" />
+    <title>Repaso HTML</title>
+  </head>
+  <body>
+    <!--Imagenes-->
+    <h2>Imagenes</h2>
+    <img id="imagen" src="img/32f69995ab39.jpg" width="300" title="Osterreich" />
+
+    <!--Listas ordenadas, no ordenadas y de definicion-->
+    <h2>Listas ordenadas</h2>
+    <ol start="5">
+      <li>Julio</li>
+      <li>Carmen</li>
+      <li>Pablo</li>
+      <li>Samuel</li>
+    </ol>
+
+    <h2>Listas no ordenadas</h2>
+    <ul>
+      <li>Barcelona</li>
+      <li>Real Madrid</li>
+    </ul>
+
+    <h2>Listas de definicion</h2>
+    <dl>
+        <dt>Termino 1</dt>
+        <dd>Definicion 1</dd>
+        <dt>Termino 2</dt>
+        <dd>Definicion 2</dd>
+    </dl>
+
+    <h2>Listas anidadas</h2>
+    <ul>
+        <li>Carnivoro
+            <ul>
+                <li>Leon</li>
+                <li>Buitres</li>
+            </ul>
+        </li>
+        <li>Herbivoro
+            <ul>
+                <li>Cabra</li>
+                <li>Vaca</li>
+            </ul>
+        </li>
+        <li>Omnivoro
+            <ul>
+                <li>Oso</li>
+                <li>Urraca</li>
+            </ul>
+        </li>
+    </ul>
+
+    <!--Enlaces-->
+    <h2>Enlaces</h2>
+    <a href="https://www.google.com" target="_blank">Ir a Google</a><br>
+    <a href="contacto.html">Ir a Contacto</a><br>
+    <a href="#imagen">Ir a imagen</a>
+                                        
+    <!--Tablas-->
+    <h2>Tablas</h2>
+
+    <table border="10px">
+        <caption>Factura articulos deportivos</caption>
+        <tr>
+            <th>Nombre</th>
+            <th>Precio</th>
+        </tr>
+        <tr>
+            <td>Zapatillas</td>
+            <td>35€</td>
+        </tr>
+        <tr>
+            <td>Camiseta</td>
+            <td>15€</td>
+        </tr>
+        <tr>
+            <th>Total</th>
+            <th>50€</th>
+        </tr>
+    </table>
+
+    <!--Formulario-->
+    <h2>Formulario</h2>
+
+    <form action="" method="get">
+        <label for ="nombre">Nombre:</label>
+        <input id="nombre" type="text" name="name" size="25" required><br><br>
+
+        <label for ="pass">Contraseña:</label>
+        <input id="pass" type="password" name="pass" size="25" required minlength="8"><br><br>
+
+        <label for ="email">Correo electronico:</label>
+        <input id="email" type="email" name="email" size="22" required><br><br>
+
+        <label for ="url">URL:</label>
+        <input id="url" type="url" name="url" size="25" required><br><br>
+
+        <label for ="date">Fecha:</label>
+        <input id="date" type="date" name="date"><br><br>
+
+        <label for ="fecha">Fecha y hora:</label>
+        <input id="fecha" type="datetime-local" name="fecha"><br><br>
+
+        <label for ="number">Numero:</label>
+        <input id="number" type="number" name="numero" step="5"><br><br>
+
+        <label for ="range">Rango:</label>
+        <input id="range" type="range" name="range" min="0" max="100" value="10"><br><br>
+
+        <label for ="colour">Color:</label>
+        <input id="colour" type="color" name="colour" value="#FF0000"><br><br>
+
+        <label for ="com">Comentario:</label>
+        <textarea id="com" name="comment" rows="4" cols="27" placeholder="Tu comentario aqui....."></textarea><br><br>
+
+        <input id="opt1" type="checkbox" name="opcion1" value="yes" checked><br>
+        <label for="opt1">Opcion 1</label>
+        <input id="opt2" type="checkbox" name="opcion1" value="yes"><br>
+        <label for="opt2">Opcion 2</label>
+        <input id="opt3" type="checkbox" name="opcion1" value="yes" checked><br>
+        <label for="opt3">Opcion 3</label>
+
+        <input id="op1" type="radio" name="opciones" value="1">
+        <label for="op1">Opcion 1</label>
+        <input id="op2" type="radio" name="opciones" value="1">
+        <label for="op2">Opcion 2</label>
+        <input id="op3" type="radio" name="opciones" value="1">
+        <label for="op3">Opcion 3</label>
+
+        <hr>
+        <label for="lista">Opciones a elegir</label><br><br>
+        <select id="lista" name="opciones" size="1" multiple>
+            <option value="1">opción 1</option>
+            <option value="2" selected>opción 2</option>
+            <option value="3">opción 3</option>
+        </select>
+        <br><br>
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar</button>
+        <button onclick="alert('HOLA MUNDO')">Hola world</button>
+
+        <br><br>
+        <progress max="100" value="60"></progress>
+        <br><br>
+        <meter min="0" max="100" value="70" low="20" high="80"></meter>
+
+        <br><br>
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="name">Nombre</label>
+            <input type="text" name="name" size="20">
+            <br>
+            <br>
+            <label for="edad">Edad</label>
+            <input id = "edad" type="number" name="age" size="5">
+
+        </fieldset>
+    </form>
+
+  </body>
+</html>

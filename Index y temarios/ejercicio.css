@@ -1,0 +1,31 @@
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+.contenedor div {
+    background-color: blue;
+    border: 1px solid black;
+    width: 20%;
+    height: 100px;
+    display: inline-block;
+}
+
+.prueba {
+    width: 60%;
+    background-color: aqua;
+    border: 1px solid black;
+    margin: auto;
+}
+
+@media (max-width: 700px){
+    nav ul li {
+    display:block;
+    }
+    .contenedor div {
+        display: block;
+    }
+}
